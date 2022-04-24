@@ -2,10 +2,69 @@
 //
 
 #include <iostream>
+#include <Windows.h>
+
+using namespace std;
+/*int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+
+   
+    cout << "вычисление стоймости покупки\n";
+    cout << "выведите исходную\n";
+    cout << "цена тетради (руб) ->\n";
+    cout << "количество тетрадей";
+    cout << "цена карандаша ->\n";
+    cout << "количество карандашей ->\n";
+    float price_notebook, price_pincil, summa;
+    int count_notebook, count_pencil;
+    cout << "цена тетради (руб) ->";
+    cin >> price_notebook;
+    cout << "количество тетрадей ->";
+    cin >> count_notebook;
+    cout << "цена карандаша ->";
+    cin >> price_pincil;
+    cout << "количество карандашей ->";
+    cin >> count_pencil;
+    summa = price_notebook * count_notebook + price_pincil * count_pencil;
+    cout << "стоймость покупки: \n"
+    << summa;
+
+   
+}
+*/
+/*
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    float widh, height;
+    cout << "вычисление площади треугольника. \n"
+      << "введите длинну основания треугольника ->\n";
+    cin >> widh;
+    cout << "вывести длинну высоты треугольника ->\n";
+    cin >> height
+    cout << "площадь треугольника: "
+        << 0.5 * widh * height << "кв. см.";
+     
+}
+*/
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+   
+    int start_sec = 75498;
+    // cin >> sec;
+    int sec = start_sec % 60;
+    int min = start_sec / 60 % 60;
+    int hour = start_sec / 60 / 60; // start_sec / 3600
+
+    cout << "h: " << hour << "m: " << min << "s: " << sec;
 
 }
 
